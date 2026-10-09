@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at 50% 30%, #150826 0%, #000000 70%);
+  color: #eaeaea;
+  font-size: 14px;
+  font-family: 'Cinzel', 'Georgia', serif;
+  overflow: auto;
+}
+a {
+  color: #c084fc;
+  font-size: 14px;
+}
+#main {
+  width: 100%;
+}
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+#text {
+  width: 700px;
+  height: 560px;
+  left: 10px;
+  top: 80px;
+  position: absolute;
+  pointer-events: none;
+}
+#code {
+  display: none;
+  color: #6675ff;
+  font-size: 16px;
+  margin-top: 70px;
+  line-height: 2;
+  font-size: larger;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 12px rgba(139, 92, 246, 0.45);
+}
+#clock-box {
+  position: absolute;
+  left: 60px;
+  top: 550px;
+  font-size: 28px;
+  display: none;
+  color: #60a5fa;
+  letter-spacing: 1px;
+}
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+#clock {
+  margin-left: 48px;
+}
+#clock .digit {
+  font-size: 64px;
+}
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+.hand {
+  cursor: pointer;
+}
+.say {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+.space {
+  margin-right: 150px;
+}
+
+#message-box{
+  position: absolute;
+  margin-top:450px;
+  font-size: 25px;
+  font-family: monospace;
+
+}
+}
