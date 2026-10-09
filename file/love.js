@@ -75,7 +75,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#f0468c';
+        var color = '#ff4d6d';
 
         this.heart = {
             point  : point,
@@ -457,7 +457,7 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#9d174d';
+        	ctx.fillStyle = '#ff758f';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
@@ -471,7 +471,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#e11d48', '#be123c', '#db2777', '#be185d', '#ff2e63', '#9f1239']);
+        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#ff4d6d', '#ff758f', '#ff85a1', '#ff3366', '#ff5c8a', '#ffb3c6']);
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
@@ -608,7 +608,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#f0468c';
+        var color = '#ff4d6d';
 
         this.heart = {
             point  : point,
@@ -990,7 +990,7 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#9d174d';
+        	ctx.fillStyle = '#ff758f';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
@@ -1004,7 +1004,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#e11d48', '#be123c', '#db2777', '#be185d', '#ff2e63', '#9f1239']);
+        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#ff4d6d', '#ff758f', '#ff85a1', '#ff3366', '#ff5c8a', '#ffb3c6']);
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
