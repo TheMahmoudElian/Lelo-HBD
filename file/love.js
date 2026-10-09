@@ -75,7 +75,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#ff4d6d';
+        var color = '#ec4899';
 
         this.heart = {
             point  : point,
@@ -608,7 +608,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#ff4d6d';
+        var color = '#ec4899';
 
         this.heart = {
             point  : point,
@@ -1004,7 +1004,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#ff4d6d', '#ff758f', '#ff85a1', '#ff3366', '#ff5c8a', '#ffb3c6']);
+        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#f571e1', '#ff0000', '#f56e25', '#ff5577', '#ff36e4', '#5930ff);
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
