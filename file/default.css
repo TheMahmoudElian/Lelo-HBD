@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: radial-gradient(circle at 50% 30%, #3d0a1f 0%, #000000 70%);
+  background: radial-gradient(circle at 50% 30%, #150826 0%, #000000 70%);
   color: #eaeaea;
   font-size: 14px;
   font-family: 'Cinzel', 'Georgia', serif;
@@ -31,7 +31,7 @@ a {
 }
 #code {
   display: none;
-  color: rgb(196, 255, 255);
+  color: #6675ff;
   font-size: 16px;
   margin-top: 70px;
   line-height: 2;
