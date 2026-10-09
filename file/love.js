@@ -169,7 +169,7 @@
             ctx.scale(0.75, 0.75);
             ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
             ctx.fillText("Click Me:) ", 30, -5);
-            ctx.fillText("Birthday Queen, Mariam !", 28, 10);
+            ctx.fillText("Birthday Queen, Zainab !", 28, 10);
             ctx.restore();
         },
         clear: function() {
@@ -457,7 +457,7 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#ff758f';
+        	ctx.fillStyle = '#4c1d95';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
@@ -471,7 +471,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#ff4d6d', '#ff758f', '#ff85a1', '#ff3366', '#ff5c8a', '#ffb3c6']);
+        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#8b5cf6', '#ec4899', '#3b82f6', '#a78bfa', '#312e81']);
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
@@ -509,6 +509,9 @@
             }
             ctx.closePath();
             ctx.fill();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
+            ctx.stroke();
             ctx.restore();
         },
         jump: function() {
@@ -608,7 +611,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#ec4899';
+        var color = '#ff4d6d';
 
         this.heart = {
             point  : point,
@@ -990,7 +993,7 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#ff758f';
+        	ctx.fillStyle = 'ff758f';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
@@ -1004,7 +1007,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#f571e1', '#ff0000', '#f56e25', '#ff5577', '#ff36e4', '#5930ff);
+        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#f571e1', '#ff0000', '#f56e25', '#ff5577', '#ff36e4', '#5930ff']);
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
@@ -1042,6 +1045,9 @@
             }
             ctx.closePath();
             ctx.fill();
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
+            ctx.stroke();
             ctx.restore();
         },
         jump: function() {
