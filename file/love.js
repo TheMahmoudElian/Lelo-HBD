@@ -608,7 +608,7 @@
         this.tree = tree;
 
         var scale = scale || 1
-        var color = '#ec4899';
+        var color = '#FFC0CB';
 
         this.heart = {
             point  : point,
@@ -990,7 +990,7 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#4c1d95';
+        	ctx.fillStyle = '#FFC0CB';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
@@ -1004,7 +1004,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || (function(p){ return p[random(0, p.length - 1)]; })(['#8b5cf6', '#ec4899', '#3b82f6', '#a78bfa', '#312e81']);
+        this.color = color || 'rgb(255,' + random(0, 255) + ',' + random(0, 255) + ')';
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
@@ -1042,9 +1042,6 @@
             }
             ctx.closePath();
             ctx.fill();
-            ctx.lineWidth = 1;
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.25)';
-            ctx.stroke();
             ctx.restore();
         },
         jump: function() {
