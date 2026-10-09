@@ -31,7 +31,7 @@ a {
 }
 #code {
   display: none;
-  color: #6675ff;
+  color: rgb(196, 255, 255);
   font-size: 16px;
   margin-top: 70px;
   line-height: 2;
